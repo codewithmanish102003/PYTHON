@@ -1,5 +1,5 @@
 fruits={"apple","banana","cherry","Grapes","orange"}
-print(fruits)
+print(f"fruits {fruits}")
 
 #length() and type() function
 

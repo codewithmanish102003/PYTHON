@@ -22,15 +22,16 @@ finally:
     # Ensures connection exists and is connected before trying to close it
     if connection and connection.is_connected():
         cursor = connection.cursor()
-        # cursor.execute("Create database mydatabase;")
+        # cursor.execute("Create database student;")
         # print("database Created")
-        cursor.execute("use mydatabase;")
-        print("connecting with mydatabase")
-        # cursor.execute("create table employee (id int primary key, name varchar(2255));")
+        cursor.execute("use student;")
+        print("connecting with student database")
+        # cursor.execute("create table bca (id INT PRIMARY KEY, name VARCHAR(225));")
         # print("table is created")
-        cursor.execute("insert into employee (id, name) values (1,'Manish');")
+        cursor.execute("INSERT INTO bca (id, name) values (3,'Manish');")
+        cursor.execute("Commit")
         
-        cursor.execute("select * from employee")
+        cursor.execute("select * from bca")
         res=cursor.fetchall()
         
         for i in res:

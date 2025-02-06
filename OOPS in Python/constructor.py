@@ -4,6 +4,8 @@ class Person:
         self.name=name
         self.occ=occ
         
+    def __str__(self) -> str:
+        pass
     @classmethod
     def info(self):
         print(f"{self.name} is a {self.occ}")
