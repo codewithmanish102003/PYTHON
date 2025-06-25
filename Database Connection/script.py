@@ -21,7 +21,7 @@ def connect_to_database():
             print(f"You're connected to: {db_name}")
 
             # Example: Retrieving data from a table
-            cursor.execute("SELECT * FROM bca;")  # Replace 'your_table' with actual table name
+            cursor.execute("SELECT * FROM bca;")
             result = cursor.fetchall()
 
             print("Query result:")

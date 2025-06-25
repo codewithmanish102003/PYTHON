@@ -1,4 +1,3 @@
-from sqlite3 import Cursor
 import mysql.connector
 
 connection = None
@@ -28,7 +27,7 @@ finally:
         print("connecting with student database")
         # cursor.execute("create table bca (id INT PRIMARY KEY, name VARCHAR(225));")
         # print("table is created")
-        cursor.execute("INSERT INTO bca (id, name) values (3,'Manish');")
+        cursor.execute("INSERT INTO bca (id, name) values (5,'Manish');")
         cursor.execute("Commit")
         
         cursor.execute("select * from bca")
